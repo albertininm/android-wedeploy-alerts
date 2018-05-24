@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<dimen name="margin_right_login">16dp</dimen>
+	<dimen name="margin_left_login">16dp</dimen>
+	<dimen name="font_size_input">14sp</dimen>
+	<dimen name="padding_input_top_down">15dp</dimen>
+	<dimen name="padding_input_left_right">15dp</dimen>
+	<dimen name="login_text">16sp</dimen>
+	<dimen name="custom_error_bar_height">42dp</dimen>
+	<dimen name="custom_error_bar_height_negative">-42dp</dimen>
+	<dimen name="icon_healthy_height">14dp</dimen>
+	<dimen name="icon_healthy_width">14dp</dimen>
+	<dimen name="margin_left_project">18dp</dimen>
+	<dimen name="margin_right_project">18dp</dimen>
+	<dimen name="item_elevation">1.5dp</dimen>
+	<dimen name="touch_item_elevation">4dp</dimen>
+	<dimen name="margin_content_item_project">24dp</dimen>
+	<dimen name="icon_unhealthy_projects">42dp</dimen>
+	<dimen name="margin_top_project">24dp</dimen>
+</resources>

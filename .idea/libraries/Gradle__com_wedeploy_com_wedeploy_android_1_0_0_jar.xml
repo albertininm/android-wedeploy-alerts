@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.wedeploy:com.wedeploy.android:1.0.0@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.wedeploy/com.wedeploy.android/1.0.0/bde1ad8c867692653962191880d28cb76d5cda8d/com.wedeploy.android-1.0.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.wedeploy/com.wedeploy.android/1.0.0/888218f7ff410d1d5d858566fdd8648243b94e7a/com.wedeploy.android-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

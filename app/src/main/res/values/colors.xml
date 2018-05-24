@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="colorPrimary">#000000</color>
+	<color name="colorPrimaryDark">#cccccc</color>
+	<color name="hint_color">#4c0e141a</color>
+	<color name="colorAccent">#015b2e</color>
+	<color name="we_deploy_green">#24aa5f</color>
+	<color name="line_color">#33ffffff</color>
+	<color name="input_text_color_hint">#4c0e141a</color>
+	<color name="input_text_color">#cc0e141a</color>
+	<color name="input_border_green">#00ae55</color>
+	<color name="snack_bar_login_error_color">#ff4040</color>
+	<color name="snack_bar_forgot_password_color">#e60e141a</color>
+	<color name="input_label_login">#cc0e141a</color>
+	<color name="toolbar_text_login">#0e141a</color>
+	<color name="input_field_background">#FAFAFB</color>
+	<color name="white">#FFFFFF</color>
+	<color name="background">#FFF</color>
+	<color name="project_id_text_color">#0e141a</color>
+	<color name="screen_background_color">#efefef</color>
+	<color name="background_open_browser">#190e141a</color>
+	<color name="project_screen_text_color">#101a23</color>
+	<color name="red_error_color">#ff4040</color>
+	<color name="projects_unhealthy_text_color_bar">#99000000</color>
+	<color name="status_bar_color_grey">#190e141a</color>
+	<color name="background_color_alert_dialog">#fafafa</color>
+	<color name="alert_dialog_text_color">#990e141a</color>
+	<color name="alert_dialog_button_text_color">#00ae55</color>
+</resources>

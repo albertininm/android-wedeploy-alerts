@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.hannesdorfmann:adapterdelegates3-3.0.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/adapterdelegates3-3.0.1.aar/ce55640fe68aace7a9e02a1663c87fb9/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/adapterdelegates3-3.0.1.aar/ce55640fe68aace7a9e02a1663c87fb9/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.hannesdorfmann/adapterdelegates3/3.0.1/41071c0e5f529eace84b8067f8d0a2e2d2e372f/adapterdelegates3-3.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
