@@ -40,8 +40,9 @@
         <activity
             android:name="com.liferay.wedeploy.activities.ServicesActivity"
             android:label="Services"
+            android:parentActivityName="com.liferay.wedeploy.activities.ProjectsActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/AppThemeNoActionBarGreyStatusBar" />
         <activity
             android:name="com.liferay.wedeploy.activities.OAuthActivity"
             android:screenOrientation="portrait"

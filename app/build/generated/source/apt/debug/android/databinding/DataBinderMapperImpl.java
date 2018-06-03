@@ -25,6 +25,15 @@ class DataBinderMapperImpl extends android.databinding.DataBinderMapper {
                     }
                         throw new java.lang.IllegalArgumentException("The tag for activity_main is invalid. Received: " + tag);
                 }
+                case com.liferay.wedeploy.R.layout.activity_services:
+ {
+                        final Object tag = view.getTag();
+                        if(tag == null) throw new java.lang.RuntimeException("view must have a tag");
+                    if ("layout/activity_services_0".equals(tag)) {
+                            return new com.liferay.wedeploy.databinding.ActivityServicesBinding(bindingComponent, view);
+                    }
+                        throw new java.lang.IllegalArgumentException("The tag for activity_services is invalid. Received: " + tag);
+                }
                 case com.liferay.wedeploy.R.layout.row_layout_project:
  {
                         final Object tag = view.getTag();
@@ -77,6 +86,12 @@ class DataBinderMapperImpl extends android.databinding.DataBinderMapper {
             case 423753077: {
                 if(tag.equals("layout/activity_main_0")) {
                     return com.liferay.wedeploy.R.layout.activity_main;
+                }
+                break;
+            }
+            case -2136617638: {
+                if(tag.equals("layout/activity_services_0")) {
+                    return com.liferay.wedeploy.R.layout.activity_services;
                 }
                 break;
             }

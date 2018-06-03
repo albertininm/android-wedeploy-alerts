@@ -26,4 +26,5 @@
 	<color name="background_color_alert_dialog">#fafafa</color>
 	<color name="alert_dialog_text_color">#990e141a</color>
 	<color name="alert_dialog_button_text_color">#00ae55</color>
+	<color name="line_color_services">#1e0e141a</color>
 </resources>

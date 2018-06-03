@@ -35,7 +35,8 @@
 			android:name=".activities.ServicesActivity"
 			android:label="Services"
 			android:screenOrientation="portrait"
-			android:theme="@style/AppTheme"/>
+			android:parentActivityName=".activities.ProjectsActivity"
+			android:theme="@style/AppThemeNoActionBarGreyStatusBar"/>
 		<activity
 			android:name=".activities.OAuthActivity"
 			android:screenOrientation="portrait"

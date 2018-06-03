@@ -30,6 +30,8 @@
 
 package com.liferay.wedeploy.activities;
 
+import android.animation.AnimatorInflater;
+import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
@@ -40,6 +42,7 @@ import android.widget.TextView;
 import com.liferay.wedeploy.R;
 import com.liferay.wedeploy.activities.interfaces.ServicesView;
 import com.liferay.wedeploy.adapters.ServiceAdapter;
+import com.liferay.wedeploy.databinding.ActivityServicesBinding;
 import com.liferay.wedeploy.model.Service;
 import com.liferay.wedeploy.presenters.ServicesPresenter;
 import com.liferay.wedeploy.util.KeysConstants;
@@ -54,10 +57,19 @@ public class ServicesActivity extends AppCompatActivity implements ServicesView,
 	private List<Service> services;
 	private TextView servicesHeaderTextView;
 	private ServicesPresenter presenter;
+	private ActivityServicesBinding binding;
 
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_services);
+
+		binding = DataBindingUtil.setContentView(this, R.layout.activity_services);
+
+		binding.appBarLayout.setStateListAnimator(
+			AnimatorInflater.loadStateListAnimator(this, R.drawable.app_bar_layout_shadow_selector));
+
+		setSupportActionBar(binding.toolbar);
+
 		presenter = new ServicesPresenter();
 		presenter.bind(this);
 		presenter.onCreate();
@@ -76,6 +88,12 @@ public class ServicesActivity extends AppCompatActivity implements ServicesView,
 	protected void onDestroy() {
 		presenter.unbind();
 		super.onDestroy();
+	}
+
+
+	public void setToolbarTitle(){
+		TextView textView = binding.toolbar.findViewById(R.id.project_id);
+		textView.setText(getProjectId());
 	}
 
 	public void onClick(int position, View v) {

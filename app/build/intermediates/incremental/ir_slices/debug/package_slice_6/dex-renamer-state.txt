@@ -1,4 +1,4 @@
-#Wed May 23 17:41:53 BRT 2018
-base.0=/Users/albert/Documents/alerts-wedeploy/wedeploy-alerts-android/app/build/intermediates/transforms/dexMerger/debug/6
+#Sat Jun 02 22:35:34 BRT 2018
+base.0=/Users/albert/Documents/android-wedeploy-alerts/app/build/intermediates/transforms/dexMerger/debug/6
 path.0=classes.dex
 renamed.0=classes.dex

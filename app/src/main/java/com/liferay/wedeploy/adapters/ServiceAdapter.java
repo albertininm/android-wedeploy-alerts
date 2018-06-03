@@ -39,6 +39,7 @@ import android.widget.TextView;
 import com.liferay.wedeploy.R;
 import com.liferay.wedeploy.activities.holders.ServiceViewHolder;
 import com.liferay.wedeploy.model.Service;
+import com.liferay.wedeploy.util.Constants;
 import java.util.List;
 
 /**
@@ -66,46 +67,47 @@ public class ServiceAdapter extends RecyclerView.Adapter<ServiceViewHolder> {
 		final Service service = services.get(i);
 
 		ImageView serviceHealthImageView = viewHolder.getServiceHealthImageView();
+		TextView serviceHealthTextView = viewHolder.getServiceHealthTextView();
 
 		String health = service.getHealth();
 
-		if (health.equals("healthy")) {
-			serviceHealthImageView.setImageResource(R.drawable.taghealthy);
-		} else if (health.equals("unhealthy")) {
-			serviceHealthImageView.setImageResource(R.drawable.tagunhealthy);
+		if (health.equals(Constants.HEALTHY)) {
+			serviceHealthImageView.setImageResource(R.drawable.healthy_icon);
+			serviceHealthTextView.setText(R.string.healthy);
+		} else if (health.equals(Constants.UNHEALTHY)) {
+			serviceHealthImageView.setImageResource(R.drawable.unhealthy_icon);
+			serviceHealthTextView.setText(R.string.unhealthy);
 		} else {
-			serviceHealthImageView.setImageResource(R.drawable.tagnone);
+			serviceHealthImageView.setImageResource(R.drawable.none_icon);
+			serviceHealthTextView.setText(R.string.none);
 		}
 
-		ImageView serviceTypeImageView = viewHolder.getServiceTypeImageView();
+		ImageView serviceIcon = viewHolder.getServiceIcon();
 
 		if (service.isType("hosting")) {
-			serviceTypeImageView.setImageResource(R.drawable.avatarhosting);
+			serviceIcon.setImageResource(R.drawable.avatarhosting);
 		} else if (service.isType("data")) {
-			serviceTypeImageView.setImageResource(R.drawable.avatardata);
+			serviceIcon.setImageResource(R.drawable.data_icon);
 		} else if (service.isType("auth")) {
-			serviceTypeImageView.setImageResource(R.drawable.avatarauth);
+			serviceIcon.setImageResource(R.drawable.avatarauth);
 		} else if (service.isType("ruby")) {
-			serviceTypeImageView.setImageResource(R.drawable.avatarruby);
+			serviceIcon.setImageResource(R.drawable.avatarruby);
 		} else if (service.isType("node")) {
-			serviceTypeImageView.setImageResource(R.drawable.avatarnodejs);
+			serviceIcon.setImageResource(R.drawable.avatarnodejs);
 		} else if (service.isType("java")) {
-			serviceTypeImageView.setImageResource(R.drawable.avatarjava);
+			serviceIcon.setImageResource(R.drawable.avatarjava);
 		} else if (service.isType("liferay")) {
-			serviceTypeImageView.setImageResource(R.drawable.avatardxp);
+			serviceIcon.setImageResource(R.drawable.liferay_icon);
 		} else if (service.isType("mail")) {
-			serviceTypeImageView.setImageResource(R.drawable.avataremail);
+			serviceIcon.setImageResource(R.drawable.email_icon);
 		} else {
-			serviceTypeImageView.setImageResource(R.drawable.avatardocker);
+			serviceIcon.setImageResource(R.drawable.docker_icon);
 		}
 
 		TextView serviceIdTextView = viewHolder.getServiceIdTextView();
 
 		serviceIdTextView.setText(service.getServiceId());
 
-		ImageView restartServiceImageView = viewHolder.getRestartServiceImageView();
-
-		restartServiceImageView.setImageResource(R.drawable.buttonrestart);
 	}
 
 	public ServiceViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {

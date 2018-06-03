@@ -44,4 +44,6 @@ public interface ServicesView {
 	String getProjectId();
 
 	void showRestarServiceResult(boolean failed);
+
+	void setToolbarTitle();
 }

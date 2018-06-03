@@ -44,10 +44,11 @@ public class ServiceViewHolder extends RecyclerView.ViewHolder implements View.O
 
 	private ServiceAdapter.ServiceAdapterListener listener;
 
-	private ImageView restartServiceImageView;
-	private ImageView serviceHealthImageView;
+	private ImageView serviceIconImageView;
 	private TextView serviceIdTextView;
-	private ImageView serviceTypeImageView;
+	private ImageView serviceHealthIconImageView;
+	private TextView serviceHealthTextView;
+	private View restartServiceView;
 
 	public ServiceViewHolder(View itemView, ServiceAdapter.ServiceAdapterListener listener) {
 
@@ -55,27 +56,33 @@ public class ServiceViewHolder extends RecyclerView.ViewHolder implements View.O
 
 		this.listener = listener;
 
-		serviceIdTextView = itemView.findViewById(R.id.serviceId);
-		serviceHealthImageView = itemView.findViewById(R.id.serviceHealth);
-		restartServiceImageView = itemView.findViewById(R.id.serviceRestart);
-		serviceTypeImageView = itemView.findViewById(R.id.serviceType);
-		restartServiceImageView.setOnClickListener(this);
+		serviceIconImageView = itemView.findViewById(R.id.service_icon);
+		serviceIdTextView = itemView.findViewById(R.id.service_id);
+		serviceHealthIconImageView = itemView.findViewById(R.id.health_icon);
+		serviceHealthTextView = itemView.findViewById(R.id.health_text);
+		restartServiceView = itemView.findViewById(R.id.restart_service_view);
+		restartServiceView.setOnClickListener(this);
+
 	}
 
-	public ImageView getRestartServiceImageView() {
-		return restartServiceImageView;
+	public View getRestartServiceView() {
+		return restartServiceView;
 	}
 
 	public ImageView getServiceHealthImageView() {
-		return serviceHealthImageView;
+		return serviceHealthIconImageView;
+	}
+
+	public TextView getServiceHealthTextView() {
+		return serviceHealthTextView;
 	}
 
 	public TextView getServiceIdTextView() {
 		return serviceIdTextView;
 	}
 
-	public ImageView getServiceTypeImageView() {
-		return serviceTypeImageView;
+	public ImageView getServiceIcon() {
+		return serviceIconImageView;
 	}
 
 	public void onClick(View view) {

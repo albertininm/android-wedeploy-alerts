@@ -50,6 +50,7 @@ public class ServicesPresenter extends Presenter<ServicesView> {
 	public void onCreate() {
 		//This is bad, ideally we would create an abstraction to not use the android SDK here
 		token = PreferencesUtil.getStringByToken(((Activity) view).getApplicationContext(), KeysConstants.TOKEN);
+		view.setToolbarTitle();
 	}
 
 	public void onStart() {
