@@ -4,7 +4,7 @@
             "outputFile": "/Users/albert/Documents/android-wedeploy-alerts/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-port/values-port.xml",
             "map": [
                 {
-                    "source": "/Users/albert/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/cf2feb9694027840f11d068f746c6737/res/values-port/values-port.xml",
+                    "source": "/Users/albert/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f82b9c473e1de14f7d9de86999ffc05d/res/values-port/values-port.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

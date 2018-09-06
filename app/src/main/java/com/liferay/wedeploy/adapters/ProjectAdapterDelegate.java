@@ -57,6 +57,6 @@ public class ProjectAdapterDelegate extends AdapterDelegate<List> {
 			projectHealthIconView.setImageResource(R.drawable.none_icon);
 			projectHealthText.setText(R.string.none);
 		}
-		projectIdTextView.setText(project.getId());
+		projectIdTextView.setText(project.getProjectId());
 	}
 }

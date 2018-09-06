@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:layout_marginTop="20dp"
+	android:gravity="center_horizontal"
+	android:orientation="vertical"
+	app:layout_behavior="@string/appbar_scrolling_view_behavior"
+	>
+
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="24dp"
+		android:layout_marginLeft="@dimen/margin_left_login"
+		android:layout_marginRight="@dimen/margin_right_login"
+		android:orientation="vertical"
+		>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="6dp"
+			android:fontFamily="@font/circular_std_book"
+			android:text="@string/email"
+			android:textColor="@color/input_label_login"
+			android:textSize="14sp"
+			/>
+
+		<android.support.design.widget.TextInputLayout
+			android:id="@+id/etEmailLayout"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@drawable/input_background"
+			app:hintEnabled="false"
+			>
+
+			<EditText
+				android:id="@+id/email_edit_text"
+				android:layout_width="match_parent"
+				android:layout_height="40dp"
+				android:layout_gravity="center"
+				android:background="@drawable/input_background"
+				android:fontFamily="@font/circular_std_book"
+				android:hint="@string/enter_your_email_address"
+				android:inputType="textEmailAddress"
+				android:paddingLeft="12dp"
+				android:textColor="@color/input_text_color"
+				android:textSize="@dimen/font_size_input"
+
+				/>
+		</android.support.design.widget.TextInputLayout>
+
+	</LinearLayout>
+
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="24dp"
+		android:layout_marginLeft="@dimen/margin_left_login"
+		android:layout_marginRight="@dimen/margin_right_login"
+		android:orientation="vertical"
+		>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="6dp"
+			android:orientation="horizontal"
+			>
+
+			<TextView
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:fontFamily="@font/circular_std_book"
+				android:gravity="left"
+
+				android:text="@string/password"
+				android:textColor="@color/input_label_login"
+				android:textSize="14sp"
+				/>
+
+			<TextView
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:fontFamily="@font/circular_std_book"
+				android:gravity="right"
+				android:text="@string/forgot_your_password"
+				android:textColor="@color/we_deploy_green"
+				android:textSize="14sp"
+				/>
+		</LinearLayout>
+
+
+		<android.support.design.widget.TextInputLayout
+			android:id="@+id/etPasswordLayout"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			app:hintEnabled="false"
+			app:passwordToggleDrawable="@drawable/eye_show"
+			app:passwordToggleEnabled="true"
+			app:passwordToggleTint="@color/color_selector"
+			>
+
+			<EditText
+				android:id="@+id/password_edit_text"
+				android:layout_width="match_parent"
+				android:layout_height="40dp"
+				android:layout_gravity="center"
+				android:background="@drawable/input_background"
+				android:fontFamily="@font/circular_std_book"
+				android:hint="@string/enter_your_password"
+				android:inputType="textPassword"
+				android:paddingLeft="12dp"
+				android:textColor="@color/input_text_color"
+				android:textSize="@dimen/font_size_input"
+				android:windowSoftInputMode="adjustPan"
+				/>
+		</android.support.design.widget.TextInputLayout>
+	</LinearLayout>
+
+	<Button
+		android:id="@+id/login_button"
+		android:layout_width="match_parent"
+		android:layout_height="48dp"
+		android:layout_gravity="center_horizontal"
+		android:layout_marginLeft="@dimen/margin_left_login"
+		android:layout_marginRight="@dimen/margin_right_login"
+		android:background="@drawable/layout_rounded_email_with_password"
+		android:fontFamily="@font/circular_std_black"
+		android:gravity="center"
+		android:text="@string/log_in"
+		android:textAllCaps="false"
+		android:textColor="#FFFFFF"
+		android:textSize="@dimen/login_text"
+		/>
+</LinearLayout>

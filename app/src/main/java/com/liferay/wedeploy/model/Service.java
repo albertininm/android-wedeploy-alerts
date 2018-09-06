@@ -35,6 +35,8 @@ package com.liferay.wedeploy.model;
  */
 public class Service {
 
+
+
 	private String health;
 	private String id;
 	private String serviceId;

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                    
+  
+	<android.support.design.widget.CoordinatorLayout
+		android:id="@+id/coordinator_layout"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/screen_background_color"
+		android:descendantFocusability="beforeDescendants"
+		android:focusableInTouchMode="true"
+		android:theme="@style/MyShadowBar"
+		 android:tag="layout/activity_projects_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+		<include
+			layout="@layout/no_projects_layout"
+			android:id="@+id/no_projects_view"
+			android:visibility="gone"
+			/>
+
+		<LinearLayout
+			xmlns:tools="http://schemas.android.com/tools"
+			android:id="@+id/projects_list"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:animateLayoutChanges="true"
+			android:background="#efefef"
+			android:orientation="vertical"
+			android:visibility="visible"
+			tools:context="com.liferay.wedeploy.activities.ProjectsActivity"
+			 android:tag="binding_1">
+
+			<include
+				layout="@layout/unhealthy_project_bar"
+				android:id="@+id/unhealthy_project_bar"
+				android:visibility="gone"
+				/>
+
+			<android.support.v7.widget.RecyclerView
+				android:id="@+id/recycleView"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				app:layout_behavior="@string/appbar_scrolling_view_behavior"
+				/>
+		</LinearLayout>
+
+	</android.support.design.widget.CoordinatorLayout>
+         

@@ -4,17 +4,7 @@
             "outputFile": "/Users/albert/Documents/android-wedeploy-alerts/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "/Users/albert/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/24812acaf7a4cce127f6d195d7f5c6cf/res/values-v16/values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "65",
-                        "endOffsets": "116"
-                    }
-                },
-                {
-                    "source": "/Users/albert/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/cf2feb9694027840f11d068f746c6737/res/values-v16/values-v16.xml",
+                    "source": "/Users/albert/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f82b9c473e1de14f7d9de86999ffc05d/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -30,6 +20,16 @@
                         "endLines": "6",
                         "endColumns": "12",
                         "endOffsets": "289"
+                    }
+                },
+                {
+                    "source": "/Users/albert/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/2ea7c86d95e1b6c5ff1f306ce75f2b73/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
                     }
                 }
             ]

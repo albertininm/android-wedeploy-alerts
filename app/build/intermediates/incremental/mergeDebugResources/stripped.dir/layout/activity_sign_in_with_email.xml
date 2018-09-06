@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+                                                    
+                                               
+                                                                        
+  
+
+	<android.support.design.widget.CoordinatorLayout
+		android:id="@+id/coordinator_layout"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="#FFF"
+		android:descendantFocusability="beforeDescendants"
+		android:focusableInTouchMode="true"
+		android:theme="@style/MyShadowBar"
+		 android:tag="layout/activity_sign_in_with_email_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" tools:context="com.liferay.wedeploy.presenters.SignInWithEmailActivity">
+
+		<android.support.design.widget.AppBarLayout
+			android:id="@+id/app_bar_layout"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_alignParentBottom="true"
+			android:background="#FFF"
+			>
+			<android.support.v7.widget.Toolbar
+				android:id="@+id/toolbar"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				app:contentInsetStartWithNavigation="0dp"
+				app:navigationIcon="@drawable/back_button"
+				>
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:fontFamily="@font/circular_std_black"
+					android:gravity="left"
+					android:text="@string/login_to_wedeploy"
+					android:textColor="@color/toolbar_text_login"
+					android:textSize="18sp"
+					/>
+			</android.support.v7.widget.Toolbar>
+		</android.support.design.widget.AppBarLayout>
+		<!--<View-->
+		<!--style="@style/Widget.Shadow.AppBar"-->
+		<!--app:layout_anchor="@id/app_bar_layout"/>-->
+
+		<!--<include layout="@layout/content_sign_in"/>-->
+
+		<LinearLayout
+			xmlns:android="http://schemas.android.com/apk/res/android"
+			xmlns:app="http://schemas.android.com/apk/res-auto"
+			android:id="@+id/linear_layout"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_marginTop="@dimen/custom_error_bar_height_negative"
+			android:gravity="center_horizontal"
+			android:orientation="vertical"
+			app:layout_behavior="@string/appbar_scrolling_view_behavior"
+			>
+
+			<LinearLayout
+				android:id="@+id/custom_error_bar"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/custom_error_bar_height"
+				android:layout_marginBottom="20dp"
+				android:background="@color/snack_bar_login_error_color"
+				android:gravity="center"
+				android:orientation="horizontal"
+				android:visibility="visible"
+				>
+				<TextView
+					android:id="@+id/custom_error_bar_text"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="@dimen/margin_left_login"
+					android:layout_weight="1"
+					android:fontFamily="@font/circular_std_book"
+					android:gravity="start"
+					android:text="@string/the_provided_credentials_are_invalid"
+					android:textColor="#FFF"
+					android:textSize="14sp"
+					/>
+
+				<ImageButton
+					android:id="@+id/custom_error_bar_close_icon"
+					android:layout_width="12dp"
+					android:layout_height="12dp"
+					android:layout_margin="-20dp"
+					android:layout_marginRight="@dimen/margin_right_login"
+					android:background="@drawable/cancel_icon_bar"
+					android:gravity="end"
+					android:padding="20dp"
+					/>
+
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/linear_layout_email"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="12dp"
+				android:layout_marginLeft="@dimen/margin_left_login"
+				android:layout_marginRight="@dimen/margin_right_login"
+				android:orientation="vertical"
+				>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="6dp"
+					android:fontFamily="@font/circular_std_book"
+					android:text="@string/email"
+					android:textColor="@color/input_label_login"
+					android:textSize="14sp"
+					/>
+
+				<android.support.design.widget.TextInputLayout
+					android:id="@+id/etEmailLayout"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:background="@drawable/input_background"
+					app:hintEnabled="false"
+					>
+
+					<EditText
+						android:id="@+id/email_edit_text"
+						android:layout_width="match_parent"
+						android:layout_height="48dp"
+						android:layout_gravity="center"
+						android:background="@drawable/input_background"
+						android:focusableInTouchMode="true"
+						android:fontFamily="@font/circular_std_book"
+						android:hint="@string/enter_your_email_address"
+						android:inputType="textEmailAddress"
+						android:paddingLeft="12dp"
+						android:textColor="@color/input_text_color"
+						android:textColorHint="@color/hint_color"
+						android:textSize="@dimen/font_size_input"
+
+						/>
+				</android.support.design.widget.TextInputLayout>
+
+				<TextView
+					android:id="@+id/email_error_text_view"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="6dp"
+					android:fontFamily="@font/circular_std_book"
+					android:gravity="left"
+					android:text="@string/the_email_is_required"
+					android:textColor="@color/snack_bar_login_error_color"
+					android:visibility="gone"
+					/>
+
+			</LinearLayout>
+
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="24dp"
+				android:layout_marginLeft="@dimen/margin_left_login"
+				android:layout_marginRight="@dimen/margin_right_login"
+				android:orientation="vertical"
+				>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="6dp"
+					android:orientation="horizontal"
+					>
+
+					<TextView
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+						android:fontFamily="@font/circular_std_book"
+						android:gravity="left"
+						android:text="@string/password"
+						android:textColor="@color/input_label_login"
+						android:textSize="14sp"
+						/>
+
+					<TextView
+						android:id="@+id/forgot_password"
+						android:layout_width="0dp"
+						android:layout_height="match_parent"
+						android:layout_weight="1"
+						android:fontFamily="@font/circular_std_book"
+						android:gravity="right"
+						android:text="@string/forgot_your_password"
+						android:textColor="@color/we_deploy_green"
+						android:textSize="14sp"
+						/>
+				</LinearLayout>
+
+
+				<android.support.design.widget.TextInputLayout
+					android:id="@+id/etPasswordLayout"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="vertical"
+					app:hintEnabled="false"
+					app:passwordToggleDrawable="@drawable/eye_show"
+					app:passwordToggleEnabled="true"
+					app:passwordToggleTint="@color/color_selector"
+					>
+
+					<EditText
+						android:id="@+id/password_edit_text"
+						android:layout_width="match_parent"
+						android:layout_height="48dp"
+						android:layout_gravity="center"
+						android:background="@drawable/input_background"
+						android:fontFamily="@font/circular_std_book"
+						android:hint="@string/enter_your_password"
+						android:inputType="textPassword"
+						android:paddingEnd="8dp"
+						android:paddingLeft="12dp"
+						android:textColor="@color/input_text_color"
+						android:textColorHint="@color/hint_color"
+						android:textSize="@dimen/font_size_input"
+						android:windowSoftInputMode="adjustPan"
+						/>
+				</android.support.design.widget.TextInputLayout>
+
+				<TextView
+					android:id="@+id/password_error_text_view"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="6dp"
+					android:fontFamily="@font/circular_std_book"
+					android:gravity="left"
+					android:text="@string/the_password_is_required"
+					android:textColor="@color/snack_bar_login_error_color"
+					android:visibility="gone"
+					/>
+			</LinearLayout>
+
+			<FrameLayout
+				android:layout_width="match_parent"
+				android:layout_height="48dp"
+				android:layout_marginLeft="@dimen/margin_left_login"
+				android:layout_marginRight="@dimen/margin_right_login"
+				android:background="@drawable/layout_rounded_email_with_password"
+				android:orientation="vertical"
+				>
+
+				<Button
+					android:id="@+id/login_button"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_gravity="center_horizontal"
+					android:background="@drawable/layout_rounded_email_with_password"
+					android:drawablePadding="12dp"
+					android:fontFamily="@font/circular_std_black"
+					android:gravity="center"
+					android:text="@string/log_in"
+					android:textAllCaps="false"
+					android:textColor="#FFFFFF"
+					android:textSize="@dimen/login_text"
+					/>
+
+				<ProgressBar
+					android:id="@+id/progress_bar"
+					android:layout_width="24dp"
+					android:layout_height="24dp"
+					android:layout_gravity="center"
+					android:indeterminateDrawable="@drawable/loading_login"
+					android:indeterminateDuration="10000"
+
+					/>
+
+			</FrameLayout>
+
+		</LinearLayout>
+
+	</android.support.design.widget.CoordinatorLayout>
+
+         

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="96dp"
+	android:background="#FFF"
+	android:elevation="1dp"
+	android:orientation="vertical"
+	>
+
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="6dp"
+		android:layout_marginStart="@dimen/margin_left_project"
+		android:layout_marginTop="12dp"
+		android:gravity="center_vertical"
+
+		>
+		<ImageView
+			android:layout_width="@dimen/icon_unhealthy_projects"
+			android:layout_height="@dimen/icon_unhealthy_projects"
+			android:background="@drawable/project_unhealthy_alert_icon"
+			/>
+
+		<TextView
+			android:id="@+id/unhealthy_project_title_bar"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="14dp"
+			android:fontFamily="@font/roboto_regular"
+			android:textColor="@color/projects_unhealthy_text_color_bar"
+			/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		>
+
+		<TextView
+			android:id="@+id/dismiss_unhealthy_bar"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="12dp"
+			android:layout_marginEnd="@dimen/margin_right_project"
+			android:layout_weight="1"
+			android:fontFamily="@font/roboto_medium"
+			android:gravity="right"
+			android:text="DISMISS"
+			android:textColor="@color/red_error_color"
+			android:textSize="14sp"
+			/>
+	</LinearLayout>
+
+</LinearLayout>
