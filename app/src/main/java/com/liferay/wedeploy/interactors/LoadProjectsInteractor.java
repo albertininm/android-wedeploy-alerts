@@ -23,7 +23,7 @@ public class LoadProjectsInteractor {
 
 		Authorization authorization = new TokenAuthorization(token);
 
-		APIClient.load(authorization, Constants.PATH_PROJECT, new Callback() {
+		APIClient.Companion.loadProjects(authorization, Constants.PATH_PROJECT, new Callback() {
 			public void onSuccess(Response response) {
 				apiCallback.onSuccess(jsonToList(response.getBody()));
 			}

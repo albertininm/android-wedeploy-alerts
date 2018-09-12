@@ -19,6 +19,6 @@ public class RestartServiceInteractor {
 
 		Authorization authorization = new TokenAuthorization(token);
 
-		APIClient.restartService(authorization, getPath(service), callback);
+		APIClient.Companion.restartService(authorization, getPath(service), callback);
 	}
 }

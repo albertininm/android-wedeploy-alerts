@@ -21,8 +21,8 @@ public class GetCurrentUserInteractor {
 
 		Authorization authorization = new TokenAuthorization(token);
 
-		PreferencesUtil.saveStringByToken(context, KeysConstants.TOKEN, authorization.getToken());
-		APIClient.getCurrentUser(authorization, new Callback() {
+		PreferencesUtil.Companion.saveStringByToken(context, KeysConstants.TOKEN, authorization.getToken());
+		APIClient.Companion.getCurrentUser(authorization, new Callback() {
 
 			public void onSuccess(Response response) {
 				getCurrentUserSuccess(context, response);
@@ -39,7 +39,7 @@ public class GetCurrentUserInteractor {
 		JSONObject jsonObject;
 		try {
 			jsonObject = new JSONObject(response.getBody());
-			PreferencesUtil.saveStringByToken(context, KeysConstants.PHOTO_URL,
+			PreferencesUtil.Companion.saveStringByToken(context, KeysConstants.PHOTO_URL,
 				jsonObject.getString(KeysConstants.PHOTO_URL));
 		} catch (JSONException e) {
 			Log.e("error", e.getMessage());

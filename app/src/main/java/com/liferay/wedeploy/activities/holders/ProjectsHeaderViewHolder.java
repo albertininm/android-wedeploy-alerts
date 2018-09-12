@@ -29,23 +29,18 @@ public class ProjectsHeaderViewHolder extends RecyclerView.ViewHolder {
 		userPhoto = itemView.findViewById(R.id.profile_image);
 
 		userPhoto.setOnClickListener(view -> {
-			Log.d("clicked", "Clicked");
-			LayoutInflater factory = LayoutInflater.from(userPhoto.getContext());
-			View logoutDialogView = factory.inflate(R.layout.log_out_dialog_layout, null);
+
 			AlertDialog logoutDialog = new AlertDialog.Builder(userPhoto.getContext()).create();
-			//logoutDialog.setView(logoutDialogView);
 
 			logoutDialog.setTitle(logoutDialog.getContext().getResources().getString(R.string.log_out));
 			logoutDialog.setMessage(logoutDialog.getContext().getResources().getString(R.string.alert_dialog_text));
-			logoutDialog.setButton(AlertDialog.BUTTON_POSITIVE, logoutDialog.getContext().getResources().getString(R.string.logout), new DialogInterface.OnClickListener() {
-				@Override
-				public void onClick(DialogInterface dialog, int which) {
-					PreferencesUtil.saveStringByToken(view.getContext(), KeysConstants.TOKEN, "");
-					PreferencesUtil.saveStringByToken(view.getContext(), KeysConstants.PHOTO_URL, "");
+			logoutDialog.setButton(AlertDialog.BUTTON_POSITIVE, logoutDialog.getContext().getResources().getString(R.string.logout), (dialog, which) -> {
+
+					PreferencesUtil.Companion.saveStringByToken(view.getContext(), KeysConstants.TOKEN, "");
+					PreferencesUtil.Companion.saveStringByToken(view.getContext(), KeysConstants.PHOTO_URL, "");
 					Intent intent = new Intent(view.getContext(), MainActivity.class);
 					intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
 					view.getContext().startActivity(intent);
-				}
 			});
 
 			logoutDialog.setButton(AlertDialog.BUTTON_NEGATIVE, logoutDialog.getContext().getResources().getString(R.string.cancel), new DialogInterface.OnClickListener() {

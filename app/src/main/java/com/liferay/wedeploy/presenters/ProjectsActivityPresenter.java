@@ -57,7 +57,7 @@ public class ProjectsActivityPresenter extends Presenter<ProjectView> {
 	private WeDeploySocket weDeploySocket;
 
 	public void onCreate() {
-		token = PreferencesUtil.getStringByToken(((Activity) view).getApplicationContext(), KeysConstants.TOKEN);
+		token = PreferencesUtil.Companion.getStringByToken(((Activity) view).getApplicationContext(), KeysConstants.TOKEN);
 	}
 
 	public void onStart() {

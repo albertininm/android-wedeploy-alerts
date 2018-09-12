@@ -11,7 +11,7 @@ import com.wedeploy.android.auth.ProviderAuthorization;
 public class SignInWithProviderInteractor {
 
 	public void execute(Activity activity, ProviderAuthorization.Provider provider, String providerScope) {
-		APIClient.signInWithProvider(activity, getProviderAuthorization(provider, providerScope));
+		APIClient.Companion.signInWithProvider(activity, getProviderAuthorization(provider, providerScope));
 	}
 
 	private ProviderAuthorization getProviderAuthorization(ProviderAuthorization.Provider provider,

@@ -19,7 +19,7 @@ public class WeDeploySocket {
 		opts = new IO.Options();
 		opts.forceNew = false;
 		opts.transports = new String[] { "websocket" };
-		opts.query = "accessToken=" + PreferencesUtil.getStringByToken(context, KeysConstants.TOKEN);
+		opts.query = "accessToken=" + PreferencesUtil.Companion.getStringByToken(context, KeysConstants.TOKEN);
 		socket = IO.socket("https://api.wedeploy.com/subscribe/user/projects", opts);
 	}
 

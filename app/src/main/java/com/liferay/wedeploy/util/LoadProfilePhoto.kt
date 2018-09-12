@@ -9,8 +9,8 @@ import de.hdodenhof.circleimageview.CircleImageView
  */
 
 class LoadProfilePhoto {
-    companion object {
 
+    companion object {
         fun load(photo: CircleImageView) {
             Glide.with(photo.context)
                 .load(PreferencesUtil.getStringByToken(photo.context, KeysConstants.PHOTO_URL))

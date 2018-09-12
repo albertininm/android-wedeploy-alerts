@@ -9,6 +9,6 @@ import com.wedeploy.android.Callback;
 public class ForgotPasswordInteractor {
 
 	public void execute(String email, Callback callback) {
-		APIClient.forgotPassword(email, callback);
+		APIClient.Companion.forgotPassword(email, callback);
 	}
 }

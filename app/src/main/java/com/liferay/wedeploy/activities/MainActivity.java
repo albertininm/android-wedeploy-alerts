@@ -84,6 +84,6 @@ public class MainActivity extends AppCompatActivity implements MainActivityView 
 	}
 
 	public boolean isLogged() {
-		return !PreferencesUtil.getStringByToken(getApplicationContext(), KeysConstants.TOKEN).isEmpty();
+		return !PreferencesUtil.Companion.getStringByToken(getApplicationContext(), KeysConstants.TOKEN).isEmpty();
 	}
 }

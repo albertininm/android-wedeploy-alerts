@@ -46,7 +46,7 @@ public class SignInInteractor {
 
 	public void execute(Context context, String email, String password, Callback callback) {
 
-		APIClient.signIn(email, password, new Callback() {
+		APIClient.Companion.signIn(email, password, new Callback() {
 			public void onSuccess(Response response) {
 				loginSuccess(context, response);
 				callback.onSuccess(response);
@@ -70,7 +70,7 @@ public class SignInInteractor {
 			Log.e("error", e.getMessage());
 		}
 
-		PreferencesUtil.saveStringByToken(context, KeysConstants.TOKEN, token);
-		PreferencesUtil.saveStringByToken(context, KeysConstants.PHOTO_URL, photoUrl);
+		PreferencesUtil.Companion.saveStringByToken(context, KeysConstants.TOKEN, token);
+		PreferencesUtil.Companion.saveStringByToken(context, KeysConstants.PHOTO_URL, photoUrl);
 	}
 }
