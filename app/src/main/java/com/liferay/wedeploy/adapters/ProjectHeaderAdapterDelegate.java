@@ -43,6 +43,6 @@ public class ProjectHeaderAdapterDelegate extends AdapterDelegate<List> {
 
 		CircleImageView profilePhoto = ((ProjectsHeaderViewHolder) holder).getUserPhoto();
 
-		LoadProfilePhoto.load(profilePhoto);
+		LoadProfilePhoto.Companion.load(profilePhoto);
 	}
 }

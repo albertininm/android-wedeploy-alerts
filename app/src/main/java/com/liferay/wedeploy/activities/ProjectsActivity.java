@@ -133,7 +133,7 @@ public class ProjectsActivity extends AppCompatActivity implements ProjectView {
 
 	public void loadProfilePhoto() {
 		CircleImageView imageView = binding.noProjectsView.findViewById(R.id.profile_image);
-		LoadProfilePhoto.load(imageView);
+		LoadProfilePhoto.Companion.load(imageView);
 	}
 
 	public void showUnhealthyProjectBar(long qtd) {
