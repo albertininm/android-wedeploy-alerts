@@ -1,4 +1,0 @@
-#Wed Sep 12 16:13:39 BRT 2018
-base.0=/Users/albert/Documents/android-wedeploy-alerts/app/build/intermediates/transforms/dexMerger/debug/11
-path.0=classes.dex
-renamed.0=classes.dex

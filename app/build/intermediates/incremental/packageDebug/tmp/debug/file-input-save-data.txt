@@ -1,11 +1,7 @@
 #Internal package file, do not edit.
-#Wed Sep 12 16:13:40 BRT 2018
-1.base=/Users/albert/Documents/android-wedeploy-alerts/app/build/intermediates/transforms/dexMerger/debug/12
+#Wed Sep 19 19:01:32 BRT 2018
 0.baseType=DIRECTORY
-1.baseType=DIRECTORY
-count=2
-1.set=DEX
+0.base=/Users/albert/Documents/android-wedeploy-alerts/app/build/intermediates/transforms/dexMerger/debug/0
 0.path=classes.dex
 0.set=DEX
-0.base=/Users/albert/Documents/android-wedeploy-alerts/app/build/intermediates/transforms/dexMerger/debug/13
-1.path=classes.dex
+count=1
