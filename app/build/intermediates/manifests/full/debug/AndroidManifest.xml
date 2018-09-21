@@ -16,7 +16,8 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/we_wedeploy_icon"
-        android:supportsRtl="true" >
+        android:supportsRtl="true"
+        android:testOnly="true" >
         <activity
             android:name="com.liferay.wedeploy.activities.MainActivity"
             android:screenOrientation="portrait"
