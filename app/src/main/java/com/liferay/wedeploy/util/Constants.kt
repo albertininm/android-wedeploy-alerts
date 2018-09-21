@@ -16,5 +16,6 @@ class Constants {
         const val HEALTHY = "healthy"
         const val UNHEALTHY = "unhealthy"
         const val NONE = "none"
+        const val SOCKET_URL = "https://api.wedeploy.com/subscribe/user/projects"
     }
 }
